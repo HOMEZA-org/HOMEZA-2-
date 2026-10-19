@@ -1,0 +1,29 @@
+import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
+import {defineConfig} from 'vite';
+
+export default defineConfig(() => {
+  return {
+    plugins: [react(), tailwindcss()],
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, '.'),
+      },
+    },
+    define: {
+      'import.meta.env.VITE_PAYSTACK_PUBLIC_KEY': JSON.stringify(
+        process.env.PAYSTACK_PUBLIC_KEY ||
+          process.env.VITE_PAYSTACK_PUBLIC_KEY ||
+          'pk_live_021108ccdb019dcbdb0d2aa29543eb815a9a963d'
+      ),
+    },
+    server: {
+      // HMR is disabled in AI Studio via DISABLE_HMR env var.
+      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
+      hmr: process.env.DISABLE_HMR !== 'true',
+      // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
+      watch: process.env.DISABLE_HMR === 'true' ? null : {},
+    },
+  };
+});

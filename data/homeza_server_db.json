@@ -1,0 +1,713 @@
+{
+  "users": [
+    {
+      "id": "user-admin-1",
+      "role": "ADMIN",
+      "fullName": "HOMEZA Super Admin",
+      "email": "admin@homeza.ng",
+      "phoneNumber": "+234 802 345 6789",
+      "emailVerified": true,
+      "emailVerifiedAt": "2025-10-01T00:00:00Z",
+      "accountStatus": "ACTIVE",
+      "department": "Platform Operations & Compliance",
+      "isSuperAdmin": true,
+      "createdAt": "2025-10-01T00:00:00Z",
+      "isPhoneVerified": true,
+      "verification": {
+        "identityVerificationStatus": "VERIFIED",
+        "nameVerificationStatus": "VERIFIED",
+        "phoneVerificationStatus": "VERIFIED",
+        "overallVerificationStatus": "VERIFIED",
+        "environment": "LIVE",
+        "updatedAt": "2026-10-17T14:28:10.282Z"
+      },
+      "verificationStatus": "VERIFIED"
+    },
+    {
+      "id": "tenant-1790374198777",
+      "role": "TENANT",
+      "fullName": "Real Tenant",
+      "email": "test.tenant.1790374198755@gmail.com",
+      "phoneNumber": "+234 800 000 0000",
+      "occupation": "Professional",
+      "accountStatus": "ACTIVE",
+      "emailVerified": true,
+      "emailVerifiedAt": "2026-09-25T22:15:00.000Z",
+      "savedPropertyIds": [],
+      "createdAt": "2026-09-25T22:09:58.776Z"
+    },
+    {
+      "id": "landlord-1791787896351",
+      "email": "landlord_audit_1791787896156@gmail.com",
+      "role": "LANDLORD",
+      "fullName": "Bassey Effiong",
+      "phoneNumber": "08031234567",
+      "accountStatus": "ACTIVE",
+      "emailVerified": true,
+      "createdAt": "2026-10-12T06:51:36.351Z",
+      "businessName": "",
+      "verificationStatus": "VERIFIED",
+      "idCardType": "National Identification Number (NIN)",
+      "idCardNumber": "",
+      "emailVerifiedAt": "2026-10-12T06:52:04.799Z",
+      "verification": {
+        "identityVerificationStatus": "VERIFIED",
+        "nameVerificationStatus": "VERIFIED",
+        "phoneVerificationStatus": "VERIFIED",
+        "overallVerificationStatus": "VERIFIED",
+        "environment": "LIVE",
+        "updatedAt": "2026-10-17T16:34:45.020Z",
+        "adminReviewedBy": "Super Admin",
+        "adminReviewedAt": "2026-10-12T06:53:15.842Z",
+        "adminNotes": "Physical ID inspected and verified manually",
+        "overallVerifiedAt": "2026-10-12T06:53:15.842Z",
+        "adminApprovalStatus": "APPROVED",
+        "documentId": "doc_1792254885020_fac83f24b4d65879",
+        "documentUrl": "/api/verification/document/doc_1792254885020_fac83f24b4d65879",
+        "documentFileName": "test.png",
+        "documentUploadedAt": "2026-10-17T16:34:45.020Z",
+        "idType": "National Identification Number (NIN)",
+        "maskedIdNumber": "*******8901",
+        "identityVerifiedAt": "2026-10-17T16:34:01.203Z",
+        "provider": "identifyorg",
+        "providerReference": "HMZ-NIN-1792254839761-25BCAD",
+        "failureReason": "National Identification Number (NIN) not found in the official NIMC registry.",
+        "nameMatchConfidence": "MISMATCH"
+      },
+      "isPhoneVerified": true
+    },
+    {
+      "id": "landlord-1791792249809",
+      "email": "test_user_1791792249591@gmail.com",
+      "role": "LANDLORD",
+      "fullName": "Test Landlord",
+      "phoneNumber": "+2348031234567",
+      "accountStatus": "ACTIVE",
+      "emailVerified": false,
+      "emailVerificationToken": "vtok_landlord-1791792249809_1791792249809_d5b03eb134f11420",
+      "createdAt": "2026-10-12T08:04:09.808Z",
+      "businessName": "Test Properties",
+      "verificationStatus": "NOT_SUBMITTED",
+      "idCardType": "National Identification Number (NIN)",
+      "idCardNumber": ""
+    },
+    {
+      "id": "landlord-1791792859325",
+      "email": "flowtest@gmail.com",
+      "role": "LANDLORD",
+      "fullName": "Test User Flow",
+      "phoneNumber": "08012345678",
+      "accountStatus": "ACTIVE",
+      "emailVerified": true,
+      "createdAt": "2026-10-12T08:14:19.325Z",
+      "businessName": "Flow Test Ltd",
+      "verificationStatus": "REJECTED",
+      "idCardType": "National Identification Number (NIN)",
+      "idCardNumber": "",
+      "emailVerifiedAt": "2026-10-12T08:16:53.116Z",
+      "verification": {
+        "identityVerificationStatus": "FAILED",
+        "nameVerificationStatus": "FAILED",
+        "phoneVerificationStatus": "NOT_STARTED",
+        "overallVerificationStatus": "FAILED",
+        "environment": "LIVE",
+        "updatedAt": "2026-10-17T16:45:14.045Z",
+        "documentUrl": "/api/verification/document/doc_1792254885020_fac83f24b4d65879",
+        "idType": "National Identification Number (NIN)",
+        "maskedIdNumber": "*******8901",
+        "identityVerifiedAt": "2026-10-17T16:45:14.045Z",
+        "provider": "identifyorg",
+        "providerReference": "HMZ-NIN-1792255510749-4CD537",
+        "failureReason": "National Identification Number (NIN) not found in the official NIMC registry.",
+        "nameMatchConfidence": "MISMATCH"
+      }
+    }
+  ],
+  "properties": [
+    {
+      "landlordId": "landlord-1791787896351",
+      "title": "Self Contain in Ikot Ekpene Road, Uyo",
+      "location": {
+        "street": "12 Ikot Ekpene Road",
+        "area": "Itam",
+        "city": "Uyo",
+        "state": "Akwa Ibom"
+      },
+      "pricing": {
+        "rentAmount": 350000,
+        "paymentFrequency": "ANNUAL",
+        "inspectionFee": 3000
+      },
+      "propertyType": "SELF_CONTAIN",
+      "id": "prop-1791788005407",
+      "inspectionFee": 3000,
+      "status": "PENDING_REVIEW",
+      "createdAt": "2026-10-12T06:53:25.407Z",
+      "updatedAt": "2026-10-12T06:53:25.407Z",
+      "facilities": []
+    }
+  ],
+  "applications": [],
+  "notifications": [
+    {
+      "id": "notif-1791793013116-email-verified",
+      "userId": "landlord-1791792859325",
+      "title": "Email Address Verified",
+      "message": "Your HOMEZA email address has been verified successfully. You now have full access to platform features.",
+      "type": "SYSTEM",
+      "isRead": false,
+      "createdAt": "2026-10-12T08:16:53.116Z"
+    },
+    {
+      "id": "notif-1791792859325-admin-landlord-reg",
+      "userId": "user-admin-1",
+      "title": "New Landlord Registration",
+      "message": "New Landlord registered: Test User Flow (Flow Test Ltd).",
+      "type": "KYC_LANDLORD",
+      "targetType": "KYC_LANDLORD",
+      "targetId": "landlord-1791792859325",
+      "isRead": false,
+      "createdAt": "2026-10-12T08:14:19.325Z"
+    },
+    {
+      "id": "notif-1791792249810-admin-landlord-reg",
+      "userId": "user-admin-1",
+      "title": "New Landlord Registration",
+      "message": "New Landlord registered: Test Landlord (Test Properties).",
+      "type": "KYC_LANDLORD",
+      "targetType": "KYC_LANDLORD",
+      "targetId": "landlord-1791792249809",
+      "isRead": false,
+      "createdAt": "2026-10-12T08:04:09.808Z"
+    },
+    {
+      "id": "notif-1791787924800-email-verified",
+      "userId": "landlord-1791787896351",
+      "title": "Email Address Verified",
+      "message": "Your HOMEZA email address has been verified successfully. You now have full access to platform features.",
+      "type": "SYSTEM",
+      "isRead": false,
+      "createdAt": "2026-10-12T06:52:04.799Z"
+    },
+    {
+      "id": "notif-1791787896351-admin-landlord-reg",
+      "userId": "user-admin-1",
+      "title": "New Landlord Registration",
+      "message": "New Landlord registered: Bassey Effiong.",
+      "type": "KYC_LANDLORD",
+      "targetType": "KYC_LANDLORD",
+      "targetId": "landlord-1791787896351",
+      "isRead": false,
+      "createdAt": "2026-10-12T06:51:36.351Z"
+    }
+  ],
+  "reviewAudits": [],
+  "locations": [
+    {
+      "id": "loc-1",
+      "name": "Ewet Housing Estate",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520231",
+      "popularLandmarks": [
+        "Ewet Housing Club",
+        "Governor Office Annexe",
+        "Le Meridien Link"
+      ],
+      "description": "Upscale, serene, and modern residential estate with high-tier security and steady power.",
+      "isActive": true
+    },
+    {
+      "id": "loc-2",
+      "name": "Shelter Afrique Estate",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520232",
+      "popularLandmarks": [
+        "Shelter Afrique Roundabout",
+        "Topfaith School",
+        "Affordable Duplex Zone"
+      ],
+      "description": "Premier planned neighborhood featuring duplexes, quiet avenues, and family-friendly parks.",
+      "isActive": true
+    },
+    {
+      "id": "loc-3",
+      "name": "Osongama Estate",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520234",
+      "popularLandmarks": [
+        "Osongama Junction",
+        "Full Life Christian Centre",
+        "Edet Akpan Ave Extension"
+      ],
+      "description": "Fast-developing residential area popular among young professionals and families.",
+      "isActive": true
+    },
+    {
+      "id": "loc-4",
+      "name": "Oron Road",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520213",
+      "popularLandmarks": [
+        "Four Lane Junction",
+        "Victor Attah Int Airport Route",
+        "Silverbird Cinemas"
+      ],
+      "description": "Major arterial corridor lined with banks, corporate complexes, and modern apartments.",
+      "isActive": true
+    },
+    {
+      "id": "loc-5",
+      "name": "Udo Udoma Avenue",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520215",
+      "popularLandmarks": [
+        "Christmas Village",
+        "Zenith Bank Regional Hub",
+        "Ibom Museum Park"
+      ],
+      "description": "Vibrant avenue connecting leisure centers, cultural parks, and corporate banking institutions.",
+      "isActive": true
+    },
+    {
+      "id": "loc-6",
+      "name": "Nwaniba Road",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520249",
+      "popularLandmarks": [
+        "UniUyo Permanent Site Turnoff",
+        "Ibikot Junction",
+        "Marina Resort Route"
+      ],
+      "description": "Stretching eastern scenic corridor with peaceful residential estates and suburban homes.",
+      "isActive": true
+    },
+    {
+      "id": "loc-7",
+      "name": "Four Lanes (Edet Akpan Avenue)",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520235",
+      "popularLandmarks": [
+        "Edet Akpan Junction",
+        "Banks & Dining Strip",
+        "Ibom Hotel Link"
+      ],
+      "description": "Prime commercial and executive residential corridor known for upscale lounges and apartments.",
+      "isActive": true
+    },
+    {
+      "id": "loc-8",
+      "name": "Ring Road 3",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520236",
+      "popularLandmarks": [
+        "Ring Road 3 Interchange",
+        "Aka Road Link",
+        "New Government Layout"
+      ],
+      "description": "Modern, well-paved ring corridor with rapid new estate developments and serene compounds.",
+      "isActive": true
+    },
+    {
+      "id": "loc-9",
+      "name": "Itam",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520222",
+      "popularLandmarks": [
+        "Itam Flyover",
+        "Calabar-Itu Highway Junction",
+        "Inter-State Motor Parks"
+      ],
+      "description": "Major commercial and residential transit hub connecting Uyo to neighboring hubs.",
+      "isActive": true
+    },
+    {
+      "id": "loc-10",
+      "name": "Abak Road",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520221",
+      "popularLandmarks": [
+        "Federal Secretariat",
+        "State Judiciary Headquarters",
+        "Champion Breweries"
+      ],
+      "description": "Well-connected thoroughfare hosting major public institutions and residential enclaves.",
+      "isActive": true
+    },
+    {
+      "id": "loc-11",
+      "name": "Ikpa Road (UniUyo)",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520242",
+      "popularLandmarks": [
+        "University of Uyo Town Campus",
+        "UniUyo Annex Gate",
+        "Faculty of Arts"
+      ],
+      "description": "Vibrant academic community ideal for university staff, students, and lecturers.",
+      "isActive": true
+    },
+    {
+      "id": "loc-12",
+      "name": "Aka Road",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520237",
+      "popularLandmarks": [
+        "Aka Community Square",
+        "Aka Road Commercial Center",
+        "Plaza Link"
+      ],
+      "description": "Bustling, centrally located artery with rich commercial services and residential flats.",
+      "isActive": true
+    },
+    {
+      "id": "loc-13",
+      "name": "Aka Itiam",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520238",
+      "popularLandmarks": [
+        "Aka Itiam Junction",
+        "Grace Secondary School Area",
+        "Ring Road Link"
+      ],
+      "description": "Peaceful residential neighborhood close to central Uyo with good accessibility.",
+      "isActive": true
+    },
+    {
+      "id": "loc-14",
+      "name": "Stadium Road",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520239",
+      "popularLandmarks": [
+        "Godswill Akpabio International Stadium",
+        "Ring Road Link"
+      ],
+      "description": "World-class sporting precinct surrounded by newly developed residential compounds.",
+      "isActive": true
+    },
+    {
+      "id": "loc-15",
+      "name": "General Hospital / Anua",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520240",
+      "popularLandmarks": [
+        "St. Lukes Hospital Anua",
+        "School of Nursing",
+        "Oron Road Interchange"
+      ],
+      "description": "Serene health and institutional corridor with established family residences.",
+      "isActive": true
+    },
+    {
+      "id": "loc-16",
+      "name": "Wellington Bassey Way",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520212",
+      "popularLandmarks": [
+        "Government House Hilltop",
+        "Central Bank of Nigeria",
+        "State Police HQ"
+      ],
+      "description": "High-security historic and administrative boulevard leading to the State Seat of Power.",
+      "isActive": true
+    },
+    {
+      "id": "loc-17",
+      "name": "Atiku Abubakar Way",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520241",
+      "popularLandmarks": [
+        "State Secretariat Complex",
+        "Atiku Flyover Link",
+        "Civil Service Commission"
+      ],
+      "description": "Prime administrative and corporate avenue with adjacent quiet residential avenues.",
+      "isActive": true
+    },
+    {
+      "id": "loc-18",
+      "name": "Idoro Road",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520244",
+      "popularLandmarks": [
+        "Idoro Bridge Link",
+        "State Stadium Annex",
+        "New Ring Road Concourse"
+      ],
+      "description": "Rapidly emerging residential axis with spacious newly built flats and compounds.",
+      "isActive": true
+    },
+    {
+      "id": "loc-19",
+      "name": "Banking Layout / Udo Udoma",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520217",
+      "popularLandmarks": [
+        "Commercial Banks Hub",
+        "Corporate Towers",
+        "Tropicana Axis Link"
+      ],
+      "description": "Premier financial and business district with high security and executive apartments.",
+      "isActive": true
+    },
+    {
+      "id": "loc-20",
+      "name": "Nelson Mandela Street",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520252",
+      "popularLandmarks": [
+        "Nelson Mandela Hub",
+        "Oron Road Crosslink",
+        "Aka Road Bypass"
+      ],
+      "description": "Central urban street connecting major city districts with diverse housing options.",
+      "isActive": true
+    },
+    {
+      "id": "loc-21",
+      "name": "IBB Way",
+      "city": "Uyo",
+      "state": "Akwa Ibom State",
+      "postalCode": "520253",
+      "popularLandmarks": [
+        "IBB Avenue Flood Basin Link",
+        "Plaza Connection",
+        "Women Development Centre"
+      ],
+      "description": "Major arterial avenue with direct connections to commercial centers and schools.",
+      "isActive": true
+    }
+  ],
+  "config": {
+    "maintenanceMode": false,
+    "requireLandlordVerification": true,
+    "requireAgentApproval": true,
+    "autoFlagDuplicates": true,
+    "platformFeeRate": 0.05
+  },
+  "agentClients": [],
+  "inspections": [],
+  "reports": [],
+  "conversations": [],
+  "messages": [],
+  "supportTickets": [],
+  "payments": [],
+  "credentials": [
+    {
+      "userId": "user-admin-1",
+      "email": "admin@homeza.ng",
+      "role": "ADMIN",
+      "passwordHash": "pbkdf2$100000$4d8b5de2a7b2ec53bc1e0aebb8541ada979b2ca62992b809$676dbb41b3bafad2cf659b66021fa9e8d45ac1afb28ce934ea2c855f93bb9f300191a17ff0df9e30194eb05a45c4baf4c9aad2ea92061f5df03b7fca3790eed8",
+      "salt": "4d8b5de2a7b2ec53bc1e0aebb8541ada979b2ca62992b809",
+      "createdAt": "2025-10-01T00:00:00Z"
+    },
+    {
+      "userId": "tenant-1790374198777",
+      "email": "test.tenant.1790374198755@gmail.com",
+      "role": "TENANT",
+      "passwordHash": "9976b430bc16e8ac216517fdde2a29fb3f912d2a807b3364b51f5eb90aaff017",
+      "salt": "salt_1790374198776_uqqq15",
+      "createdAt": "2026-09-25T22:09:58.776Z"
+    },
+    {
+      "userId": "landlord-1791787896351",
+      "email": "landlord_audit_1791787896156@gmail.com",
+      "role": "LANDLORD",
+      "passwordHash": "pbkdf2$100000$salt_1791787896283_n399ab$b0e819259a038ea778711ab76ed8888dd13827fbb56cce76a703c8b31dffeb0e127c135f40cadf51a8b76a5c862d574b1019246e518b2c564fd2472af68b2a25",
+      "salt": "salt_1791787896283_n399ab",
+      "createdAt": "2026-10-12T06:51:36.351Z"
+    },
+    {
+      "userId": "landlord-1791792249809",
+      "email": "test_user_1791792249591@gmail.com",
+      "role": "LANDLORD",
+      "passwordHash": "pbkdf2$100000$salt_1791792249736_wzi8im$d994f0dc8960f0aba7d5e73f1d5b4a94d2c04ee78a61c9a94a33ad83cb53654919ec3e41d2eabc027da41e4b2f7f18bd16fd68509827a96513f2fe395df95ab3",
+      "salt": "salt_1791792249736_wzi8im",
+      "createdAt": "2026-10-12T08:04:09.808Z"
+    },
+    {
+      "userId": "landlord-1791792859325",
+      "email": "flowtest@gmail.com",
+      "role": "LANDLORD",
+      "passwordHash": "pbkdf2$100000$salt_1791792859254_aac8yk$39748e80e16c900105d7be676dfdb0b9284ee62b18671c47e43f7baa57e5bf69ce851f8e09fe150c654e4ffbec38e065704f593ae730184d631d0b3c77ef0524",
+      "salt": "salt_1791792859254_aac8yk",
+      "createdAt": "2026-10-12T08:14:19.325Z"
+    }
+  ],
+  "emailVerifications": [
+    {
+      "email": "test_user_1791792249591@gmail.com",
+      "codeHash": "pbkdf2$100000$homeza_sec_salt_2026$ab0dba5ebc9259051f8d4bf3e6d3a2e7242d62004d5be04657570f81b9d2c062d148932064de06376ad3c03b3cfe1c0ca564b6e91449a9866bf1cc6af578681a",
+      "code": "850990",
+      "token": "vtok_landlord-1791792249809_1791792249809_d5b03eb134f11420",
+      "expiresAt": 1791792849809,
+      "createdAt": "2026-10-12T08:04:09.808Z",
+      "lastSentAt": 1791792249884,
+      "attempts": 0
+    }
+  ],
+  "verificationAudits": [
+    {
+      "id": "va-1792255514046-c853da",
+      "userId": "landlord-1791792859325",
+      "userName": "Test User Flow",
+      "userRole": "LANDLORD",
+      "verificationType": "OVERALL",
+      "status": "FAILED",
+      "reason": "National Identification Number (NIN) not found in the official NIMC registry.",
+      "environment": "LIVE",
+      "timestamp": "2026-10-17T16:45:14.046Z"
+    },
+    {
+      "id": "va-1792255514045-f77b35",
+      "userId": "landlord-1791792859325",
+      "userName": "Test User Flow",
+      "userRole": "LANDLORD",
+      "verificationType": "NAME_MATCH",
+      "status": "FAILED",
+      "reason": "National Identification Number (NIN) not found in the official NIMC registry.",
+      "environment": "LIVE",
+      "timestamp": "2026-10-17T16:45:14.045Z"
+    },
+    {
+      "id": "va-1792255514045-4044f7",
+      "userId": "landlord-1791792859325",
+      "userName": "Test User Flow",
+      "userRole": "LANDLORD",
+      "verificationType": "IDENTITY_NIN",
+      "status": "FAILED",
+      "referenceId": "HMZ-NIN-1792255510749-4CD537",
+      "reason": "National Identification Number (NIN) not found in the official NIMC registry.",
+      "environment": "LIVE",
+      "timestamp": "2026-10-17T16:45:14.045Z"
+    },
+    {
+      "id": "va-1792254841204-11e690",
+      "userId": "landlord-1791787896351",
+      "userName": "Bassey Effiong",
+      "userRole": "LANDLORD",
+      "verificationType": "OVERALL",
+      "status": "VERIFIED",
+      "reason": "National Identification Number (NIN) not found in the official NIMC registry.",
+      "environment": "LIVE",
+      "timestamp": "2026-10-17T16:34:01.204Z"
+    },
+    {
+      "id": "va-1792254841203-ad1baf",
+      "userId": "landlord-1791787896351",
+      "userName": "Bassey Effiong",
+      "userRole": "LANDLORD",
+      "verificationType": "NAME_MATCH",
+      "status": "FAILED",
+      "reason": "National Identification Number (NIN) not found in the official NIMC registry.",
+      "environment": "LIVE",
+      "timestamp": "2026-10-17T16:34:01.203Z"
+    },
+    {
+      "id": "va-1792254841203-8cb931",
+      "userId": "landlord-1791787896351",
+      "userName": "Bassey Effiong",
+      "userRole": "LANDLORD",
+      "verificationType": "IDENTITY_NIN",
+      "status": "FAILED",
+      "referenceId": "HMZ-NIN-1792254839761-25BCAD",
+      "reason": "National Identification Number (NIN) not found in the official NIMC registry.",
+      "environment": "LIVE",
+      "timestamp": "2026-10-17T16:34:01.203Z"
+    },
+    {
+      "id": "va-1791787995842-59ba45",
+      "userId": "landlord-1791787896351",
+      "userName": "Bassey Effiong",
+      "userRole": "LANDLORD",
+      "verificationType": "ADMIN_REVIEW",
+      "status": "APPROVE",
+      "reason": "Physical ID inspected and verified manually",
+      "details": {
+        "adminName": "Super Admin",
+        "decision": "APPROVE"
+      },
+      "environment": "LIVE",
+      "timestamp": "2026-10-12T06:53:15.842Z"
+    },
+    {
+      "id": "va-1791787955029-fe0171",
+      "userId": "landlord-1791787896351",
+      "userName": "Bassey Effiong",
+      "userRole": "LANDLORD",
+      "verificationType": "ADMIN_REVIEW",
+      "status": "APPROVE",
+      "reason": "Physical ID inspected and verified manually",
+      "details": {
+        "adminName": "Super Admin",
+        "decision": "APPROVE"
+      },
+      "environment": "LIVE",
+      "timestamp": "2026-10-12T06:52:35.029Z"
+    },
+    {
+      "id": "va-1791787955007-84d892",
+      "userId": "landlord-1791787896351",
+      "userName": "Bassey Effiong",
+      "userRole": "LANDLORD",
+      "verificationType": "ADMIN_REVIEW",
+      "status": "REJECT",
+      "reason": "Selfie blur test",
+      "details": {
+        "adminName": "Super Admin",
+        "decision": "REJECT"
+      },
+      "environment": "LIVE",
+      "timestamp": "2026-10-12T06:52:35.008Z"
+    }
+  ],
+  "serverTime": "2026-10-17T16:45:14.046Z",
+  "version": 64,
+  "documents": [
+    {
+      "id": "doc_1791791164595_145fb0849d86f6bb",
+      "userId": "landlord-1791787896351",
+      "originalName": "national_id_card.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 5120,
+      "documentType": "NIN_SLIP",
+      "fileName": "doc_1791791164595_145fb0849d86f6bb.jpg",
+      "storagePath": "data/uploads/documents/doc_1791791164595_145fb0849d86f6bb.jpg",
+      "documentUrl": "/api/verification/document/doc_1791791164595_145fb0849d86f6bb",
+      "uploadedAt": "2026-10-12T07:46:04.595Z",
+      "status": "STORED"
+    },
+    {
+      "id": "doc_1792254885020_fac83f24b4d65879",
+      "userId": "landlord-1791787896351",
+      "originalName": "test.png",
+      "fileType": "image/png",
+      "fileSize": 10000,
+      "documentType": "GOVERNMENT_ID",
+      "fileName": "doc_1792254885020_fac83f24b4d65879.png",
+      "storagePath": "data/uploads/documents/doc_1792254885020_fac83f24b4d65879.png",
+      "documentUrl": "/api/verification/document/doc_1792254885020_fac83f24b4d65879",
+      "uploadedAt": "2026-10-17T16:34:45.020Z",
+      "status": "STORED"
+    }
+  ]
+}

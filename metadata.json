@@ -1,0 +1,6 @@
+{
+  "name": "HOMEZA",
+  "description": "HOMEZA is a trusted rental marketplace that connects tenants with verified properties and trusted landlords and property agents, making it easier to discover, communicate, and arrange property inspections — all in one place.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
